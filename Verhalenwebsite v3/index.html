@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisverhalen</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+    <header>
+        <h1>Reisverhalen</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"></a>
+            <a href="#">Inloggen</a>
+            <a href="aanmeldpagina.html">Registreren</a>
+        </div>
+        <img src="images/burger.png" alt="burgermenu" class='burger' onclick="openNav()">
+    </header>
+
+    <div class="row">
+
+        <div class="col-3 col-m-3 menu">
+            <ul>
+                <li>0-5 min lezen</li>
+                <li>5-10 min lezen</li>
+                <li>+10 min lezen</li>
+                <li>Alle verhalen</li>
+                <div class="dropdown">
+                    <li class='dropbtn'>
+                        <button onclick="myFunction()" class="dropbtn">Sorteren</button>
+                    </li>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Datum toegevoegd</a>
+                        <a href="#">Meeste likes</a>
+                        <a href="#">Meeste reacties</a>
+                        <a href="#">Leestijd: kort > lang</a>
+                        <a href="#">Leestijd: lang > kort</a>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <div class="col-6 col-m-9">
+            <p class='titel'>Uitgelicht</p>
+            <a href="Telegrafisch.html"><img src="images/preview-iphoneArtboard-1.png" alt="telegrafisch" class="pic1"></a>
+            <a href="Telegrafisch.html"><img src="images/preview-tablet-1Artboard-1.png" alt="telegrafisch" class="pic2"></a>
+            <p class='titel2'>Nieuwe verhalen</p>
+            <a href="Rondos.html"><img src="images/preview-iphone-2Artboard-1.png" alt="rondo's" class='andere'></a>
+            <a href="Mop.html"><img src="images/preview-iphone-3Artboard-1.png" alt="mop" class='andere'></a>
+
+        </div>
+
+        <div class="col-3 col-m-12">
+            <div class="aside">
+                <form action="action_page.php">
+                    <img src="images/user-icon.png" alt="user icon">
+                    <p>Gebruikersnaam:</p>
+                    <input type="text" name="firstname" placeholder='Chris'>
+                    <p>Wachtwoord:</p>
+                    <input type="password" name="lastname" placeholder="•••••••••">
+                    <p>
+                        <button class='inloggen'>Inloggen</button>
+                    </p>
+                </form>
+                <h1>Nog geen lid?</h1>
+                <img src="images/pencil-icon.png" alt="pencil icon">
+                <p>
+                    <a href="aanmeldpagina.html">
+                        <button class='registreren'>Registreren</button>
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <img src="images/Logo.png" alt="logo transavia">
+    </footer>
+
+</body>
+
+</html>
